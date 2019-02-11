@@ -43,9 +43,9 @@ In `/tweets/tweets.py` write simple program that:
 
 1. Loads 8,000 Twitter tweets from `/tweets/tweets.json` downloaded from Twitter API.
 2. Shapes data into `Pandas.DataFrame` so that:
-2.1. `Pandas.DataFrame` columns will contain  tweets' `tag` attribute (i.e. `["#ai", "#analytics", "conference", "acquisition"]`)
-2.2. `Pandas.DataFrame` index will contain tweets' `created_at` binned into 10-minutes buckets (i.e. ["2019-02-11 11:00:00", "2019-02-11 10:50:00"]) sorted in descending order.
-2.3. `Pandas.DataFrame` cells will contain `count` of tweets tagged with particular `tag` (column) ar particular `created_at` bin (index).
+`Pandas.DataFrame` columns will contain  tweets' `tag` attribute (i.e. `["#ai", "#analytics", "conference", "acquisition"]`)
+`Pandas.DataFrame` index will contain tweets' `created_at` binned into 10-minutes buckets (i.e. `["2019-02-11 11:00:00", "2019-02-11 10:50:00"]`) sorted in descending order.
+`Pandas.DataFrame` cells will contain `count` of tweets tagged with particular `tag` (column) ar particular `created_at` bin (index).
 3. Performs correlation analysis between all pairs of `tags`. Determine and provide reasoning if any correlation between `tags` was observed.
 
 Optional:
