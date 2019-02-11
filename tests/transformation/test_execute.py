@@ -1,4 +1,4 @@
-from assignments.transformation import Transformation
+from assignments.transformation.transformation import Transformation
 
 
 def test_input_without_company():
