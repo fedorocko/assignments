@@ -46,12 +46,29 @@ In `/tweets/tweets.py` write simple program that:
 `Pandas.DataFrame` columns will contain  tweets' `tag` attribute (i.e. `["#ai", "#analytics", "conference", "acquisition"]`)
 `Pandas.DataFrame` index will contain tweets' `created_at` binned into 10-minutes buckets (i.e. `["2019-02-11 11:00:00", "2019-02-11 10:50:00"]`) sorted in descending order.
 `Pandas.DataFrame` cells will contain `count` of tweets tagged with particular `tag` (column) ar particular `created_at` bin (index).
-3. Performs correlation analysis between all pairs of `tags`. Determine and provide reasoning if any correlation between `tags` was observed.
+3. Performs correlation analysis between all pairs of `tags`.
+4. Determine and provide reasoning if any significant correlation between `tags` was observed.
+
 
 Optional:
 
 1. Extend program to enable custom bin `frequency`. 
 2. Write tests.
+3. (Consider if you are applying for general programming / data processing in python)
+   Get the data for step 1 yourself. Write a code that loads 8,000 consecutive Twitter
+   tweets starting from `2019-02-01 16:30:00` with tags:
+    - #acquisition
+    - #ai
+    - #analytics 
+    - #bigdata
+    - #conference
+    - #meetup
+    - #ml
+    - #startup
+4. (Consider if you are applying for position focused more on Data Science)
+   Split the dataset in thirds (ordered by time). Use first two thirds to build a model
+   predicting counts of tweets given some tag (from those present in the data) and some time bin.
+   Validate the model using last third of data, discuss results.
 
 #### Example:
 
