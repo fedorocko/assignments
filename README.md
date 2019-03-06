@@ -66,9 +66,9 @@ Optional:
     - #ml
     - #startup
 4. (Consider if you are applying for position focused more on Data Science)
-   Split the dataset in thirds (ordered by time). Use first two thirds to build a model
-   predicting counts of tweets given some tag (from those present in the data) and some time bin.
-   Validate the model using last third of data, discuss results.
+   Split the dataset into thirds (ordered by time). Use first two thirds to _train_ a model
+   predicting counts of tweets given a tag (from those present in the data) and a time bin.
+   _Evaluate model performance_ using last third of data, discuss results.
 
 #### Example:
 
